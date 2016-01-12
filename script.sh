@@ -4,9 +4,9 @@
 useradd webmaster > /dev/null
 echo 'Creating user webmaster if needed..................[done]'
 # setting password;
-echo "webmaster:Pa$$w0rd" | chpasswd
+# echo "webmaster:Pa$$w0rd" | chpasswd
+passwd webmaster
 echo 'Creating password for user webmaster..................[done]'
-echo 'New password for webmaster is Pa$$w0rd'
 # installing semanage;
 yum -y install policycoreutils-python > /dev/null
 echo 'Installing semanage if needed..................[done]'
